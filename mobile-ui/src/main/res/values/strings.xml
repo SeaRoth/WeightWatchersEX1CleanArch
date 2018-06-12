@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Clean Arch Boilerplate</string>
+    <string name="placeholder_image">https://www.weightwatchers.com%s</string>
 </resources>

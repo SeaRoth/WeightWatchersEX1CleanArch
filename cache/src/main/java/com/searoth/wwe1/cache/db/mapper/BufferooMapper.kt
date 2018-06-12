@@ -16,9 +16,9 @@ class BufferooMapper @Inject constructor(): ModelDbMapper<CachedBufferoo> {
      */
     override fun toContentValues(model: CachedBufferoo): ContentValues {
         val values = ContentValues()
-        values.put(Db.BufferooTable.NAME, model.name)
+        values.put(Db.BufferooTable.FILTER, model.filter)
         values.put(Db.BufferooTable.TITLE, model.title)
-        values.put(Db.BufferooTable.AVATAR, model.avatar)
+        values.put(Db.BufferooTable.IMAGE, model.image)
         return values
     }
 
@@ -26,9 +26,9 @@ class BufferooMapper @Inject constructor(): ModelDbMapper<CachedBufferoo> {
      * Parse the cursor creating a [CachedBufferoo] instance.
      */
     override fun parseCursor(cursor: Cursor): CachedBufferoo {
-        val name = cursor.getString(cursor.getColumnIndexOrThrow(Db.BufferooTable.NAME))
+        val name = cursor.getString(cursor.getColumnIndexOrThrow(Db.BufferooTable.FILTER))
         val title = cursor.getString(cursor.getColumnIndexOrThrow(Db.BufferooTable.TITLE))
-        val avatar = cursor.getString(cursor.getColumnIndexOrThrow(Db.BufferooTable.AVATAR))
+        val avatar = cursor.getString(cursor.getColumnIndexOrThrow(Db.BufferooTable.IMAGE))
         return CachedBufferoo(name, title, avatar)
     }
 

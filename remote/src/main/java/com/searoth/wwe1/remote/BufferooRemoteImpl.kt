@@ -21,7 +21,7 @@ class BufferooRemoteImpl @Inject constructor(private val bufferooService: Buffer
     override fun getBufferoos(): Single<List<BufferooEntity>> {
         return bufferooService.getBufferoos()
                 .map {
-                    it.team.map { listItem ->
+                    it.map { listItem ->
                         entityMapper.mapFromRemote(listItem)
                     }
                 }

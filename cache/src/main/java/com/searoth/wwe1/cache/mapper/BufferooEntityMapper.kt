@@ -21,7 +21,7 @@ class BufferooEntityMapper @Inject constructor(): EntityMapper<CachedBufferoo, B
      * Map a [CachedBufferoo] instance to a [BufferooEntity] instance
      */
     override fun mapFromCached(type: CachedBufferoo): BufferooEntity {
-        return BufferooEntity(type.name, type.title, type.avatar)
+        return BufferooEntity(type.filter, type.title, type.image)
     }
 
 }

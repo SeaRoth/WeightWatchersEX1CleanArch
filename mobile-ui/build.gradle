@@ -85,6 +85,7 @@ dependencies {
     implementation mobileUiDependencies.glide
     implementation mobileUiDependencies.dagger
     implementation mobileUiDependencies.daggerSupport
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
 
     testImplementation mobileUiTestDependencies.kotlinJUnit
 

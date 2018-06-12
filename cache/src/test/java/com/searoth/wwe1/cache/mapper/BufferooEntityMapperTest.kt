@@ -37,9 +37,9 @@ class BufferooEntityMapperTest {
 
     private fun assertBufferooDataEquality(bufferooEntity: BufferooEntity,
                                            cachedBufferoo: CachedBufferoo) {
-        assertEquals(bufferooEntity.name, cachedBufferoo.name)
+        assertEquals(bufferooEntity.name, cachedBufferoo.filter)
         assertEquals(bufferooEntity.title, cachedBufferoo.title)
-        assertEquals(bufferooEntity.avatar, cachedBufferoo.avatar)
+        assertEquals(bufferooEntity.avatar, cachedBufferoo.image)
     }
 
 }

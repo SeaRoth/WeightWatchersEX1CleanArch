@@ -9,11 +9,6 @@ import retrofit2.http.GET
  */
 interface BufferooService {
 
-    @GET("team.json")
-    fun getBufferoos(): Single<BufferooResponse>
-
-    class BufferooResponse {
-        lateinit var team: List<BufferooModel>
-    }
-
+    @GET("collections.json")
+    fun getBufferoos(): Single<List<BufferooModel>>
 }

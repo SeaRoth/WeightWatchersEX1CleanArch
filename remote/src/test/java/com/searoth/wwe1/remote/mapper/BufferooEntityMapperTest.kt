@@ -22,9 +22,9 @@ class BufferooEntityMapperTest {
         val bufferooModel = BufferooFactory.makeBufferooModel()
         val bufferooEntity = bufferooEntityMapper.mapFromRemote(bufferooModel)
 
-        assertEquals(bufferooModel.name, bufferooEntity.name)
+        assertEquals(bufferooModel.filter, bufferooEntity.name)
         assertEquals(bufferooModel.title, bufferooEntity.title)
-        assertEquals(bufferooModel.avatar, bufferooEntity.avatar)
+        assertEquals(bufferooModel.image, bufferooEntity.avatar)
     }
 
 }
