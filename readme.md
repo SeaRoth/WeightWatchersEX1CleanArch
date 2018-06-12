@@ -1,3 +1,46 @@
+# Weight Watchers Coding Question #1
+
+![Email](https://i.imgur.com/ONC7zeu.png)
+
+This is what production quality code looks like to me.
+
+The separation of concerns and abstraction is phenomenal.
+
+There are two commits:
+1. Initial
+2. Everything I added and changed
+
+There are possibly infinite ways to build an Android app just like a house or car.  I questioned myself numerous times throughout the build process as to whether I should even use boilerplate code and I kept thinking about two things: "production quality code" and the dependecies we use every day inside Gradle. I want to present to you what I think production quality code looks like and boilerplate code is very comparable to the dependencies we use in Gradle. 
+
+I went to http://androidstarters.com/ and chose a package that used Kotlin and the latest and greatest dependencies like Retrofit, Gson, Dagger, Glide and a couple other ones for testing like Mockito and Espresso.
+
+To match the requirements of the assignment I added two pictures and modified about 18 files. 
+ - added 2 images, shrimp and question_mark
+ - changed item_row.xml to look cooler
+ - changed Database variables to match JSON
+ - changed retrofit baseUrl
+ - changed Bufferoo model to match JSON
+ - added string.xml placeholder for getting images
+ - changed service to fetch collections.json endpoint
+ - applied options to Glide for crop, error, placeholder, cacheStrategy
+ - added snackbar to onClick
+ - added constraintlayout dependency
+ - updated gradle to 3.1.3
+ - changed build tools version to 27.0.3
+
+### REQUIREMENTS
+![Question](https://i.imgur.com/1WqZrpS.png)
+
+### collections.json REPRESENTATION
+![JSON](https://i.imgur.com/JDLMWj3.png)
+
+### PORTRAIT WITH SNACKBAR
+![snack](https://i.imgur.com/Sv0tqug.png)
+
+### HORIZONTAL
+![horizontal](https://i.imgur.com/nZG1db9.png)
+
+
 [![Build Status](https://travis-ci.org/bufferapp/android-clean-architecture-boilerplate.svg?branch=master)](https://travis-ci.org/bufferapp/android-clean-architecture-boilerplate) [![codecov](https://codecov.io/gh/bufferapp/android-clean-architecture-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/bufferapp/android-clean-architecture-boilerplate) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/278fa00f492d48a288ab64188d15fb61)](https://www.codacy.com/app/hitherejoe/android-clean-architecture-boilerplate?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bufferapp/android-clean-architecture-boilerplate&amp;utm_campaign=Badge_Grade) 
 
 # Android Clean Architecture Boilerplate
